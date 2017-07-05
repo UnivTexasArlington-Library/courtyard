@@ -1,2 +1,2 @@
-# drupalcommons
-social business platform
+# courtyard
+Drupal Commons social business platform
