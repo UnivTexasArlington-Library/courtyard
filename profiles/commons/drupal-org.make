@@ -13,7 +13,11 @@ projects[addressfield][version] = "1.2"
 
 projects[addressfield_tokens][type] = "module"
 projects[addressfield_tokens][subdir] = "contrib"
-projects[addressfield_tokens][version] = "1.5"
+projects[addressfield_tokens][version] = "1.6"
+
+; Multiple "Undefined index" errors.
+; https://www.drupal.org/node/2902630#comment-12224579
+projects[addressfield_tokens][patch][] = "https://www.drupal.org/files/issues/addressfield_tokens-undefined_index_errors-2902630-3.patch"
 
 projects[admin_icons][type] = "module"
 projects[admin_icons][subdir] = "contrib"
@@ -131,7 +135,7 @@ projects[entity_embed][download][branch] = "7.x-3.x"
 
 projects[entityreference][type] = "module"
 projects[entityreference][subdir] = "contrib"
-projects[entityreference][version] = "1.4"
+projects[entityreference][version] = "1.5"
 
 projects[entityreference_prepopulate][type] = "module"
 projects[entityreference_prepopulate][subdir] = "contrib"
@@ -155,11 +159,7 @@ projects[features][version] = "2.10"
 
 projects[file_entity][type] = "module"
 projects[file_entity][subdir] = "contrib"
-projects[file_entity][version] = "2.2"
-
-; Undefined property: stdClass::$fid in file_entity_access()
-; https://www.drupal.org/node/2312603#comment-12147658
-projects[file_entity][patch][] = "https://www.drupal.org/files/issues/fix_entity_api_create_access-2312603-21.patch"
+projects[file_entity][version] = "2.4"
 
 projects[flag][type] = "module"
 projects[flag][subdir] = "contrib"
@@ -214,7 +214,7 @@ projects[link][version] = "1.4"
 
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
-projects[media][version] = "2.8"
+projects[media][version] = "2.10"
 
 projects[media_oembed][type] = "module"
 projects[media_oembed][subdir] = "contrib"
@@ -258,7 +258,7 @@ projects[message_subscribe][patch][] = "https://drupal.org/files/issues/2184567-
 
 projects[metatag][type] = "module"
 projects[metatag][subdir] = "contrib"
-projects[metatag][version] = "1.21"
+projects[metatag][version] = "1.22"
 
 projects[module_filter][type] = "module"
 projects[module_filter][subdir] = "contrib"
@@ -437,7 +437,7 @@ projects[variable][version] = "2.5"
 
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
-projects[views][version] = "3.16"
+projects[views][version] = "3.17"
 
 ; Update Views Content access filter per core performance improvements.
 ; https://drupal.org/comment/8516039#comment-8516039

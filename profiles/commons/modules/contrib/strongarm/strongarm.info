@@ -7,10 +7,7 @@ files[] = strongarm.admin.inc
 files[] = strongarm.install
 files[] = strongarm.module
 
-
-; Information added by drush on 2017-07-05
+; Information added by drush on 2012-08-29
 version = "7.x-2.0+2-dev"
-core = "7.x"
 project = "strongarm"
-datestamp = "1499261372"
-
+datestamp = "1346260871"
