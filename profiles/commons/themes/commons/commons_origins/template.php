@@ -5,7 +5,6 @@
  * Process theme data.
  */
 
- 
 /**
  * Implements hook_theme().
  */
@@ -21,17 +20,6 @@ function commons_origins_theme($existing, $type, $theme, $path) {
       'pattern' => 'form_content__',
     ),
   );
-    $items = array();
-  // create custom user-login.tpl.php
-  $items['user_login'] = array(
-  'render element' => 'form',
-  'path' => drupal_get_path('theme', 'commons_origins') . '/templates',
-  'template' => 'user-login',
-  'preprocess functions' => array(
-  'commons_origins_preprocess_user_login'
-  ),
- );
-return $items;
 }
 
 /**
