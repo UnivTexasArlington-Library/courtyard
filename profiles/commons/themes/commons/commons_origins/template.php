@@ -9,7 +9,7 @@
 /**
  * Implements hook_theme().
  */
-/*function commons_origins_theme($existing, $type, $theme, $path) {
+function commons_origins_theme($existing, $type, $theme, $path) {
   return array(
     // Register the newly added theme_form_content() hook so we can utilize
     // theme hook suggestions.
@@ -21,8 +21,7 @@
       'pattern' => 'form_content__',
     ),
   ); 
-} 
-*/
+}
 function commons_origins_theme() {
     $items = array();
   // create custom user-login.tpl.php
