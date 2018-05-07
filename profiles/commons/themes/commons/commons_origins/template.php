@@ -39,7 +39,7 @@ return $items;
 
 function commons_origins_preprocess_user_login(&$variables) {
   //$vars['intro_text'] = t('This is my awesome login form');
-  $variables['intro_text'] = t('This is my awesome login form');
+  $variables['name_array']['title'][] = 'title';
 }
 
 /**
