@@ -37,6 +37,11 @@ function commons_origins_theme() {
 return $items;
 }
 
+function commons_origins_preprocess_user_login(&$variables) {
+  //$vars['intro_text'] = t('This is my awesome login form');
+  $variables['name_array']['title'][] = 'title';
+}
+
 /**
  * Implements hook_commons_utility_links_alter().
  */
