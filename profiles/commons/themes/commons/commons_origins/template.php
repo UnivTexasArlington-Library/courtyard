@@ -10,7 +10,7 @@
  * Implements hook_theme().
  */
 function commons_origins_theme($existing, $type, $theme, $path) {
-  return array(
+  /*return array(
     // Register the newly added theme_form_content() hook so we can utilize
     // theme hook suggestions.
     // @see commons_origins_form_alter().
@@ -20,7 +20,7 @@ function commons_origins_theme($existing, $type, $theme, $path) {
       'template' => 'form-content',
       'pattern' => 'form_content__',
     ),
-  );
+  ); */
     $items = array();
   // create custom user-login.tpl.php
   $items['user_login'] = array(
