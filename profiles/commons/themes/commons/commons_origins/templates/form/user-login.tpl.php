@@ -5,7 +5,9 @@
   print '<pre>';
   print_r($variables);
   print '</pre>';
-<p><?php print $intro_text; ?></p>
+  ?>
+  <p><?php print $intro_text; ?></p>
+  <?php
 //print drupal_render_children($form) 
 
  print drupal_render($form['name']);
