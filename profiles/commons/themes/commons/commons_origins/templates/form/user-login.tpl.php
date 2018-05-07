@@ -6,12 +6,6 @@
   print_r($variables);
   print '</pre>';
 
-//print drupal_render_children($form) 
-
- print drupal_render($form['name']);
-    print drupal_render($form['pass']);
-    print drupal_render($form['form_build_id']);
-    print drupal_render($form['form_id']);
-    print drupal_render($form['actions']);
+print drupal_render_children($form) 
 
 ?>
