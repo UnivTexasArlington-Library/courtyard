@@ -5,12 +5,15 @@
  * Process theme data.
  */
 
+ function commons_origins_theme() {
+
+}
  
 /**
  * Implements hook_theme().
  */
 function commons_origins_theme($existing, $type, $theme, $path) {
-  /*return array(
+  return array(
     // Register the newly added theme_form_content() hook so we can utilize
     // theme hook suggestions.
     // @see commons_origins_form_alter().
@@ -20,18 +23,21 @@ function commons_origins_theme($existing, $type, $theme, $path) {
       'template' => 'form-content',
       'pattern' => 'form_content__',
     ),
-  ); */
-    $items = array();
-  // create custom user-login.tpl.php
-  $items['user_login'] = array(
-  'render element' => 'form',
-  'path' => drupal_get_path('theme', 'commons_origins') . '/templates/form',
-  'template' => 'user-login',
-  'preprocess functions' => array(
-  'commons_origins_preprocess_user_login'
-  ),
- );
-return $items;
+  );
+   return array(
+    'user_login' => array(
+      'template' => 'user-login',
+      'arguments' => array('form' => NULL),
+    ),
+    'user_register' => array(
+      'template' => 'user-register',
+      'arguments' => array('form' => NULL),
+    ),
+    'user_pass' => array(
+      'template' => 'user-pass',
+      'arguments' => array('form' => NULL),
+    ),
+  );
 }
 
 /**
